@@ -1,0 +1,84 @@
+name: zeely_task
+description: Zeely avatar filter task app.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_svg: ^2.2.0
+  get: ^4.7.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  mocktail: ^1.0.5
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Italian Plate No2 Expanded
+      fonts:
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Thin.ttf
+          weight: 100
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Thin Italic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Ultralight.ttf
+          weight: 200
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Ultralight Italic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Extralight.ttf
+          weight: 300
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Extralight Italic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Light.ttf
+          weight: 300
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Light Italic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded.ttf
+          weight: 400
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Medium.ttf
+          weight: 500
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Medium Italic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Demibold.ttf
+          weight: 600
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Demibold Italic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Bold.ttf
+          weight: 700
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Bold Italic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Extrabold.ttf
+          weight: 800
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Extrabold Italic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Black.ttf
+          weight: 900
+        - asset: assets/fonts/italian_plate_no2_expanded/Italian Plate No2 Expanded Black Italic.ttf
+          weight: 900
+          style: italic
