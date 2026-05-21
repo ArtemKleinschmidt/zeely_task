@@ -303,11 +303,7 @@ final class _GridTile<T> {
   final int slotIndex;
   final _TileState state;
 
-  _GridTile<T> copyWith({
-    T? item,
-    int? slotIndex,
-    _TileState? state,
-  }) {
+  _GridTile<T> copyWith({T? item, int? slotIndex, _TileState? state}) {
     return _GridTile<T>(
       key: key,
       item: item ?? this.item,

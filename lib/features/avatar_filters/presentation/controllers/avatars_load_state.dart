@@ -1,4 +1,4 @@
-import '../../domain/entities/avatar_entity.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
 
 sealed class AvatarsLoadState {
   const AvatarsLoadState();

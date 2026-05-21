@@ -1,7 +1,8 @@
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_gender.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_pose.dart';
+
 import 'avatar_age_group.dart';
-import 'avatar_entity.dart';
-import 'avatar_gender.dart';
-import 'avatar_pose.dart';
 
 typedef AvatarFilterMatcher =
     bool Function(AvatarEntity avatar, Set<Enum> selectedValues);

@@ -1,4 +1,5 @@
-import '../entities/avatar_entity.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
+
 import '../entities/avatar_filters_entity.dart';
 
 final class ApplyAvatarFiltersUseCase {

@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
 
 import '../../../../core/constants/app_assets.dart';
+import '../../../../core/routes/app_routes.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/widgets/app_outlined_frame.dart';
@@ -36,6 +38,10 @@ final class AvatarFiltersPage extends GetView<AvatarFiltersController> {
     if (result != null) {
       controller.replaceSelection(category, result);
     }
+  }
+
+  void _openAvatarDetails(AvatarEntity avatar) {
+    Get.toNamed(AppRoutes.avatarDetails, arguments: avatar);
   }
 
   @override
@@ -93,6 +99,7 @@ final class AvatarFiltersPage extends GetView<AvatarFiltersController> {
                 ),
                 AvatarsLoaded() => AvatarGrid(
                   avatars: controller.filteredAvatars,
+                  onAvatarTap: _openAvatarDetails,
                   emptyState: AvatarEmptyState(
                     title: controller.hasActiveFilters
                         ? 'avatar_filters.empty.filtered_title'.tr

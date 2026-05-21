@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../../features/avatar_details/presentation/bindings/avatar_details_binding.dart';
+import '../../features/avatar_details/ui/pages/avatar_details_page.dart';
 import '../../features/avatar_filters/presentation/bindings/avatar_filters_binding.dart';
 import '../../features/avatar_filters/ui/pages/avatar_filters_page.dart';
 import 'app_routes.dart';
@@ -10,6 +12,11 @@ abstract final class AppPages {
       name: AppRoutes.avatarFilters,
       page: () => const AvatarFiltersPage(),
       binding: AvatarFiltersBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.avatarDetails,
+      page: () => const AvatarDetailsPage(),
+      binding: AvatarDetailsBinding(),
     ),
   ];
 }

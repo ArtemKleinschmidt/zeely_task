@@ -7,14 +7,14 @@ import 'package:get/get.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:zeely_task/core/translations/app_translations.dart';
 import 'package:zeely_task/core/widgets/app_outlined_frame.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_entity.dart';
 import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_filter_category.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_gender.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_pose.dart';
 import 'package:zeely_task/features/avatar_filters/domain/usecases/apply_avatar_filters_use_case.dart';
-import 'package:zeely_task/features/avatar_filters/domain/usecases/get_avatars_use_case.dart';
 import 'package:zeely_task/features/avatar_filters/presentation/controllers/avatar_filters_controller.dart';
 import 'package:zeely_task/features/avatar_filters/ui/pages/avatar_filters_page.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_gender.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_pose.dart';
+import 'package:zeely_task/features/avatars/domain/usecases/get_avatars_use_case.dart';
 
 final class MockGetAvatarsUseCase extends Mock implements GetAvatarsUseCase {}
 
@@ -26,6 +26,9 @@ const _testAvatar = AvatarEntity(
   gender: Gender.male,
   age: 30,
   pose: Pose.standing,
+  flavors: [],
+  score: 4.5,
+  description: 'A test avatar.',
 );
 
 void main() {
