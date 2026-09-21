@@ -1,7 +1,9 @@
+import 'package:zeely_task/features/avatars/domain/entities/avatar_gender.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_pose.dart';
+import 'package:zeely_task/features/avatars/ui/localization/avatar_localizations.dart';
+
 import '../../domain/entities/avatar_age_group.dart';
 import '../../domain/entities/avatar_filter_category.dart';
-import '../../domain/entities/avatar_gender.dart';
-import '../../domain/entities/avatar_pose.dart';
 import '../localization/avatar_filters_localizations.dart';
 
 final class AvatarFilterOption {

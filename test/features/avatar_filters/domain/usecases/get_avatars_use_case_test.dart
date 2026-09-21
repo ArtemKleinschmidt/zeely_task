@@ -1,10 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_entity.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_gender.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_pose.dart';
-import 'package:zeely_task/features/avatar_filters/domain/repositories/avatar_repository.dart';
-import 'package:zeely_task/features/avatar_filters/domain/usecases/get_avatars_use_case.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_gender.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_pose.dart';
+import 'package:zeely_task/features/avatars/domain/repositories/avatar_repository.dart';
+import 'package:zeely_task/features/avatars/domain/usecases/get_avatars_use_case.dart';
 
 final class MockAvatarRepository extends Mock implements AvatarRepository {}
 
@@ -16,6 +16,9 @@ const _stubAvatar = AvatarEntity(
   gender: Gender.male,
   age: 30,
   pose: Pose.standing,
+  flavors: [],
+  score: 4.5,
+  description: 'A test avatar.',
 );
 
 void main() {

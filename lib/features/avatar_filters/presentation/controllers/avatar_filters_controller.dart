@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
+import 'package:zeely_task/features/avatars/domain/usecases/get_avatars_use_case.dart';
 
-import '../../domain/entities/avatar_entity.dart';
 import '../../domain/entities/avatar_filter_category.dart';
 import '../../domain/entities/avatar_filters_entity.dart';
 import '../../domain/usecases/apply_avatar_filters_use_case.dart';
-import '../../domain/usecases/get_avatars_use_case.dart';
 import 'avatars_load_state.dart';
 
 final class AvatarFiltersController extends GetxController {

@@ -1,11 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_age_group.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_entity.dart';
 import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_filter_category.dart';
 import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_filters_entity.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_gender.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_pose.dart';
 import 'package:zeely_task/features/avatar_filters/domain/usecases/apply_avatar_filters_use_case.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_entity.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_gender.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_pose.dart';
 
 AvatarEntity _avatar({
   String id = 'a',
@@ -20,6 +20,9 @@ AvatarEntity _avatar({
   gender: gender,
   age: age,
   pose: pose,
+  flavors: const [],
+  score: 4.5,
+  description: 'Test avatar.',
 );
 
 AvatarFiltersEntity _filters({

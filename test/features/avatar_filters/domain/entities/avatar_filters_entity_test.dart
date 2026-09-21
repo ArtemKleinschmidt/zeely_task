@@ -2,8 +2,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_age_group.dart';
 import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_filter_category.dart';
 import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_filters_entity.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_gender.dart';
-import 'package:zeely_task/features/avatar_filters/domain/entities/avatar_pose.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_gender.dart';
+import 'package:zeely_task/features/avatars/domain/entities/avatar_pose.dart';
 
 void main() {
   group('AvatarFiltersEntity', () {
